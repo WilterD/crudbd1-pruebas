@@ -1,0 +1,9 @@
+/* Estilos personalizados */
+body {
+    padding: 20px;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+}

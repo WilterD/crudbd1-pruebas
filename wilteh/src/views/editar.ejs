@@ -1,0 +1,81 @@
+<html lang="es">
+<head>
+    <link rel="stylesheet" href="/css/etilos.css">
+    <title>Crear</title>
+    <%- include('partials/head.ejs') %>
+</head>
+<body>
+    
+      <div class="container mt-4">     
+            <div class="card border-secondary">  
+                <div class="card-header">Nuevo Profesor</div>
+                <div class="card-body">
+                    <form id="miForm" action="/saveProfesor" method="post">
+                        <!-- CedulaProf, nombreP, DireccionP, TelefonoP, Categoria, Dedicacion, FechaIng, FechaEgr, StatusP   -->
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Cedula</label>
+                            <input type="text" autocomplete="off" class="form-control" id="cedula" name="cedula" tabindex="1" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Nombre</label>
+                            <input type="text" autocomplete="off" class="form-control" id="nombre" name="nombre" tabindex="1" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Direccion</label>
+                            <textarea type="text" autocomplete="off" class="form-control" id="direccion" name="direccion" tabindex="1" required></textarea>
+                        </div>
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Telefono</label>
+                            <input type="text" autocomplete="off" class="form-control" id="nombre" name="nombre" tabindex="1" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="deporte" class="form-label">Categoria</label>
+                            <select id="nombreDeporte" name="codDeporte" class="form-select" aria-label="Default select example"
+                              tabindex="2" required>
+                              <option selected disabled>Seleccione una categoria</option>
+                                <option value="A">A</option>
+                                <option value="I">I</option>
+                                <option value="S">S</option>
+                                <option value="G">G</option>
+                                <option value="T">T</option>
+                            </select>
+                          </div>
+                          <div class="mb-3">
+                            <label for="deporte" class="form-label">Dedicación</label>
+                            <select id="nombreDeporte" name="codDeporte" class="form-select" aria-label="Default select example"
+                              tabindex="2" required>
+                              <option selected disabled>Seleccione una categoria</option>
+                                <option value="A">A</option>
+                                <option value="I">I</option>
+                                <option value="S">S</option>
+                                <option value="G">G</option>
+                                <option value="T">T</option>
+                            </select>
+                          </div>
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Fecha Ingreso</label>
+                            <input type="date" autocomplete="off" class="form-control" id="nombreCarrera" name="nombreCarrera" tabindex="1" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Fecha Egreso</label>
+                            <input type="date" autocomplete="off" class="form-control" id="nombreCarrera" name="nombreCarrera" tabindex="1" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="deporte" class="form-label">Estatus</label>
+                            <select id="nombreDeporte" name="codDeporte" class="form-select" aria-label="Default select example"
+                              tabindex="2" required>
+                              <option selected disabled>Seleccione una categoria</option>
+                                <option value="P">P</option>
+                                <option value="A">A</option>
+                                <option value="R">R</option>
+                                <option value="J">J</option>
+                            </select>
+                          </div>
+                        <button id="submit-btn" type="submit" class="btn btn-primary" tabindex="5">Guardar</button>
+                        <a href="/guardar" class="btn btn-secondary">Cancelar</a>
+                    </form>
+                </div>
+            </div>        
+      </div>
+</body>
+</html>

@@ -1,0 +1,17 @@
+# Módulos de Node.js
+node_modules/
+
+# Archivos de dependencias generados automáticamente
+package-lock.json
+yarn.lock
+
+# Archivos de configuración local
+.env
+
+# Archivos de registro
+*.log
+
+# Archivos de respaldo
+*.bak
+*.backup
+*.swp
